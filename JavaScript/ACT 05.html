@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ACT 05</title>
+    <script type="text/javascript">
+        function sumArray(array) {
+            var sum = 0;
+
+            for (var i=0 ; i<array.length ; i++){
+                sum += parseInt(array[i]);
+            }
+
+            return sum;
+        }
+
+        function average(array) {
+           return sumArray(array)/array.length;
+        }
+        
+    </script>
+</head>
+<body>
+
+<script type="text/javascript">
+    var name = null;
+    var marks = new Array();
+
+    name = prompt("Name: ", '')
+
+    for (var i = 0 ; i<3 ; i++){
+        marks[i] = prompt("Mark "+(i+1)+" :", '')
+    }
+
+    if(average(marks)>=5)
+        document.write(name+" Congrats, you pass the exam")
+
+</script>
+
+</body>
+</html>

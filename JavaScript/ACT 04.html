@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ACT 04</title>
+
+    <script type="text/javascript">
+        function squarePerimeter(squareLenght) {
+            return squareLenght * 4;
+        }
+
+        function sumArray(array) {
+            var sum = 0;
+
+            for (var i=0 ; i<array.length ; i++){
+                sum += parseInt(array[i]);
+            }
+
+            return sum;
+        }
+
+        function productArray(array) {
+            var sum = 1;
+
+            for (var i=0 ; i<array.length ; i++){
+                sum *= parseInt(array[i]);
+            }
+
+            return sum;
+        }
+    </script>
+</head>
+<body>
+<script type="text/javascript">
+    var square = null;
+    var numbers = new Array();
+    var bill = 0;
+    var quantity = null;
+    var price = null;
+    var bas = null;
+    var height = null;
+
+    square = prompt("Square side lenght: ", '');
+
+    for (var i = 0 ; i<4 ; i++){
+        numbers[i] = prompt("Number " +(i+1)+ " :", '');
+    }
+
+    for (var i = 0 ; i<2 ; i++){
+        quantity = prompt("Product " +(i+1)+ " quantity :", '');
+        price = prompt("Product " +(i+1)+ " price :", '');
+
+        bill += (quantity*price);
+    }
+
+    bas = prompt("Triangle " +(i+1)+ " basse :", '');
+    height = prompt("Triangle " +(i+1)+ " haight :", '');
+
+
+
+    document.write("Square Perimeter = " + squarePerimeter(square));
+    document.write("<br/>");
+    document.write("Number sum = " + sumArray(numbers));
+    document.write("<br/>");
+    document.write("Number product = " + productArray(numbers))
+    document.write("<br/>");
+    document.write("Bill = " + bill)
+    document.write("<br/>");
+    document.write("Triangle area = " + (bas*height)/2)
+</script>
+</body>
+</html>
