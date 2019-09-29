@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <script type="text/javascript">
+        function separeDate(date) {
+            var array = Array();
+            var num = "";
+            date += "/";
+
+            for (let i = 0; i < date.length; i++) {
+
+                if (date.toString().charAt(i) == "/") {
+                    array.add(num);
+                    num = "";
+                }else {
+                    num += date.toString().charAt(i);
+                    document.write(num);
+                }
+
+            }
+        }
+    </script>
+</head>
+<body>
+<script type="text/javascript">
+    var date = null;
+    var arrayDate = null;
+    var d = new Date();
+    var year = d.getFullYear();
+
+    date = prompt("Enter date (dd/mm/yyyy",'');
+
+    arrayDate = separeDate(date);
+
+    if(arrayDate[0] == 25 && arrayDate[1] == 10 && arrayDate[2] == year)
+        document.write("Christmas")
+
+
+</script>
+</body>
+</html>

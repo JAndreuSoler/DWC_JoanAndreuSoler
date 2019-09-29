@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        function average(array) {
+            var sum = 0;
+
+            for (let i = 0; i < array.length; i++) {
+                sum += parseInt(array[i]);
+            }
+
+            return sum/array.length;
+        }
+    </script>
+</head>
+<body>
+<script type="text/javascript">
+    var marks = Array();
+    var num2 = null;
+    var result = null;
+
+    for (let i = 0; i < 3; i++) {
+        marks[i] = prompt("mark",'');
+    }
+
+
+    result = (average(marks) >= 5) ? "You pass" : "You not pass";
+
+    document.write(result);
+
+</script>
+</body>
+</html>

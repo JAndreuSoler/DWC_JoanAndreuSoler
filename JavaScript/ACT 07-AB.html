@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        function maxNum(Array) {
+            var num = Array[0];
+
+            for (let i = 0; i < Array.length; i++) {
+                num = (Array[i]>num) ? Array[i] : num;
+            }
+
+            return num;
+        }
+
+        function minNum(Array) {
+            var num = Array[0];
+
+            for (let i = 0; i < Array.length; i++) {
+                num = (Array[i]<num) ? Array[i] : num;
+            }
+
+            return num;
+        }
+    </script>
+</head>
+<body>
+<script type="text/javascript">
+    var num = Array();
+
+    for (let i = 0; i < 3; i++) {
+        num[i] = prompt("num",'');
+    }
+
+    document.write(maxNum(num)+ "<br/>");
+    document.write(minNum(num));
+
+</script>
+
+</body>
+</html>
