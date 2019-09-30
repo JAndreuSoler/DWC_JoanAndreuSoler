@@ -13,14 +13,16 @@
             for (let i = 0; i < date.length; i++) {
 
                 if (date.toString().charAt(i) == "/") {
-                    array.add(num);
+                    array.push(num);
                     num = "";
-                }else {
-                    num += date.toString().charAt(i);
-                    document.write(num);
+                    continue;
                 }
 
+                num += date.toString().charAt(i);
+
             }
+
+            return array;
         }
     </script>
 </head>
