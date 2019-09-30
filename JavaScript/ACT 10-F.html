@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+    function sumArray(array) {
+        var sum = 0;
+
+        for (var i=0 ; i<array.length ; i++){
+            sum += parseInt(array[i]);
+        }
+
+        return sum;
+    }
+
+    function average(array) {
+        return sumArray(array)/array.length;
+    }
+
+</script>
+</head>
+<body>
+
+<script type="text/javascript">
+    var heights  = new Array();
+
+    for (var i = 0 ; i<5 ; i++){
+        heights[i] = prompt("height "+(i+1)+" :", '')
+    }
+
+    document.write(average(heights))
+
+</script>
+</body>
+</html>

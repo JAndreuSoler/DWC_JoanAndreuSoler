@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        function betweenCont(lowMarge, hightMarge, array) {
+            var cont = 0;
+
+            for (let i = 0; i < array.length ; i++) {
+                cont += (array[i] >= lowMarge && array[i] <= hightMarge) ? 1 : 0;
+            }
+
+            return cont;
+        }
+
+        function higthCont(hightMarge, array) {
+            var cont = 0;
+
+            for (let i = 0; i < array.length ; i++) {
+                cont += (array[i] >= hightMarge) ? 1 : 0;
+            }
+
+            return cont;
+        }
+        function sumArray(array) {
+            var sum = 0;
+
+            for (var i=0 ; i<array.length ; i++){
+                sum += parseInt(array[i]);
+            }
+
+            return sum;
+        }
+
+    </script>
+</head>
+<body>
+
+<script type="text/javascript">
+    var salary  = new Array();
+
+    for (var i = 0 ; i<10 ; i++){
+        salary[i] = prompt("Salary "+(i+1)+" :", '')
+    }
+
+    document.write("Sum : " + sumArray(salary));
+    document.write(" <br/> " );
+    document.write("Between : " + betweenCont(500, 1000, salary));
+    document.write(" <br/> " );
+    document.write("Higth : " + higthCont(1000, salary));
+
+</script>
+
+</body>
+</html>

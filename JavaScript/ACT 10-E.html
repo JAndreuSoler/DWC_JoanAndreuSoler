@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script type="text/javascript">
+var passed = 0;
+var failed = 0;
+var mark = null;
+
+for (let i = 0 ; i < 10 ; i++) {
+    mark = prompt("Mark", '')
+
+    if (mark >= 5)
+        passed++;
+    else
+        failed++;
+}
+
+document.write("passed: " + passed);
+document.write("<br/>");
+document.write("failed: "+failed);
+
+</script>
+
+</body>
+</html>

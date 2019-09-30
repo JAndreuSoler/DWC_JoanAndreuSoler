@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script type="text/javascript">
+    var cont = 0;
+    var i = 1;
+    var digitNum = 1;
+    var digit = 1;
+    var num = 1;
+
+    while ( cont <= 25){
+        for (let j = 0; j < digitNum; j++) {
+            num += digit.toString();
+        }
+
+        document.write(num);
+        document.write("<br/>")
+
+        if(digit == 9){
+            digit = 0;
+            digitNum++;
+        }
+
+        digit++;
+        cont++;
+        num = digit;
+    }
+</script>
+
+</body>
+</html>

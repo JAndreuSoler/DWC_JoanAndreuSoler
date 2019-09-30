@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script type="text/javascript">
+    var monthNum = prompt("Num", '');
+
+    switch (parseInt(monthNum)) {
+        case 2:
+            document.write(28);
+            break;
+        case 4,6,9,11:
+            document.write(30);
+            break;
+        default:
+            document.write(31);
+    }
+</script>
+</body>
+</html>
