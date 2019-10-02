@@ -3,8 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <script type="text/javascript">
+        function sumArray(array) {
+            var sum = 0;
+
+            for (var i=0 ; i<array.length ; i++){
+                sum += parseInt(array[i]);
+            }
+
+            return sum;
+        }
+    </script>
 </head>
 <body>
+<script type="text/javascript">
+    var bigSumListIndex = null;
+    var lists = [
+        [],
+        []
+    ];
+
+    for (let i = 0; i < lists.length; i++) {
+        for (let j = 0; j < 3; j++) {
+            lists[i][j] = prompt("Num: ", '');
+        }
+    }
+
+    bigSumListIndex = (sumArray(lists[0])>sumArray(lists[1])) ? 0 : 1;
+
+    document.write(bigSumListIndex)
+</script>
 
 </body>
 </html>

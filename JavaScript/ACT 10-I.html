@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var cont = [0,0];
+        var num = null;
+        var index = null;
+
+        for (let i = 0; i < 5; i++) {
+            num = prompt("Num: ",'');
+
+            index = (num%2 == 0) ? 0 : 1;
+            cont[index]++;
+        }
+
+        document.write("Pair: "+cont[0]);
+        document.write(" <br/> ");
+        document.write("Odd: "+cont[1]);
+    </script>
+</body>
+</html>
