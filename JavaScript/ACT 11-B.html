@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        let personList = Array();
+
+        class Person {
+
+            constructor(name, age, sex){
+                this.name = name;
+                this.age = age;
+                this.sex = sex;
+            }
+        }
+
+        function addPerson() {
+            let name=document.forms["myForm"].elements["name"].value;
+            let age=document.forms["myForm"].elements["age"].value;
+            let sex=document.forms["myForm"].elements["sex"].value;
+
+            if (nameComprovator(name) == true) {
+                personList.push(new Person(name, age, sex));
+                document.getElementById("alert").innerHTML = "Person Created"
+            }else
+                document.getElementById("alert").innerHTML = "Error, person already created"
+        }
+        
+        function nameComprovator(name) {
+
+            for (let i = 0; i < personList.length; i++)
+                if (name == personList[i].name)
+                    return false;
+
+
+            return true;
+        }
+
+        function getListLength() {
+            document.getElementById("length").innerHTML = personList.length + " Persons";
+        }
+
+        function maleCount() {
+            let count = 0;
+
+            for (let i = 0; i < personList.length; i++)
+                if (personList[i].sex == "male")
+                    count++;
+
+            document.getElementById("maleCount").innerHTML = count + " Males";
+        }
+
+        function between(beginAge, finalAge) {
+            let count = 0;
+
+            for (let i = 0; i < personList.length; i++)
+                if(personList[i].age >= beginAge && personList[i].age <= finalAge)
+                    count++
+
+            document.getElementById("between").innerHTML = count + " Between " + beginAge + " and " + finalAge;
+        }
+
+        function sexFilter(sex) {
+            let list = Array();
+
+            for (let i = 0; i < personList.length; i++)
+                if (personList[i].sex == sex)
+                    list.push(personList[i]);
+
+            return list;
+        }
+
+        function oldestWomen() {
+            let list = sexFilter("female")
+            let oldestWomen = null;
+
+            if (list.length < 1){
+                document.getElementById("oldestWomen").innerHTML = "No womens in list";
+                return;
+            }
+
+            oldestWomen = 0;
+
+            for (let i = 1; i < list.length; i++)
+                if (list[oldestWomen].age < list[i])
+                    oldestWomen = i;
+
+            document.getElementById("oldestWomen").innerHTML = list[oldestWomen].name + " is the oldest women with " + list[oldestWomen].age + " years";
+        }
+
+        function youngestMan() {
+            let list = sexFilter("male")
+            let youngestMan = null;
+
+            if (list.length < 1){
+                document.getElementById("youngestMan").innerHTML = "No mans in list";
+                return;
+            }
+
+            youngestMan = 0;
+
+            for (let i = 1; i < list.length; i++)
+                if (list[youngestMan].age > list[i])
+                    youngestMan = i;
+
+            document.getElementById("youngestMan").innerHTML = list[youngestMan].name + " is the youngest man with " + list[youngestMan].age + " years";
+        }
+    </script>
+</head>
+<body>
+
+<form id="myForm" action="#">
+    Name: <input type="text" name="name"><br>
+    Sex:
+    <br/>
+    <input type="radio" name="sex" value="male" checked> Male<br>
+    <input type="radio" name="sex" value="female"> Female<br>
+    Age: <input type="text" name="age"><br><br>
+    <input type="button" onclick="addPerson()" value="Create">
+    <input type="reset">
+</form>
+
+<p id="alert"></p>
+
+<button type="button" onclick="getListLength()">Person Count</button>
+<p id="length"></p>
+
+<button type="button" onclick="maleCount()">Mens Count</button>
+<p id="maleCount"></p>
+
+<button type="button" onclick="between(18, 65)">Between 18 and 65</button>
+<p id="between"></p>
+
+<button type="button" onclick="oldestWomen()">Oldest women</button>
+<p id="oldestWomen"></p>
+
+<button type="button" onclick="youngestMan()">Youngest Man</button>
+<p id="youngestMan"></p>
+</body>
+</html>
