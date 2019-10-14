@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>wWkiLog</title>
+    <script src="Rute.js"></script>
+    <script src="RuteList.js"></script>
+    <script src="WikiLog.js" ></script>
+    <style>
+        div {
+            display: inline-block;
+        }
+
+        .for {
+            float: left;
+        }
+        .tab {
+            margin-left: 20px;
+        }
+        table {
+            border-collapse: collapse;
+        }
+
+        table, th {
+            border: 1px solid black;
+        }
+        th {
+            height: 30px;
+            width: 60px;
+        }
+    </style>
+</head>
+<body>
+<div class="for">
+    <form id="myForm" action="#">
+        ID: <input type="text" name="id"><br>
+        Start: <input type="text" name="start"><br>
+        Final: <input type="text" name="final"><br>
+        KM: <input type="text" name="km"><br>
+        Difficulty: <select name="dif">
+            <option value="Easy">Easy</option>
+            <option value="Medium">Medium</option>
+            <option value="High">High</option>
+        </select><br/>
+        <input type="button" onclick="addRute()" value="Create">
+        <select name="pos" id="pos">
+        </select>
+        <input type="reset">
+    </form>
+    <p id="comp"></p>
+    <button onclick="orderByKm()">Order</button>
+    <select id="order">
+        <option value="ascendent">Ascendent</option>
+        <option value="descendent">Descendent</option>
+    </select><br/>
+    <button onclick="del()">Delete</button><input type="text" id="delete">
+    <p id="deleteMessage"></p>
+
+    <form id="filtre" action="#">
+        ID: <input type="text" name="id"><br>
+        Start: <input type="text" name="start"><br>
+        Final: <input type="text" name="final"><br>
+        KM: <input type="text" name="km"><br>
+        Difficulty: <select name="dif">
+        <option value="">Anyone</option>
+        <option value="Easy">Easy</option>
+        <option value="Medium">Medium</option>
+        <option value="High">High</option>
+    </select><br/>
+        <input type="button" onclick="filtre()" value="Filtr">
+        <input type="button" onclick="display()" value="Reset list">
+    </form>
+
+</div>
+
+<div class="tab">
+    <table id="list">
+
+    </table>
+</div>
+<script type="text/javascript">
+    display();
+</script>
+
+</body>
+</html>

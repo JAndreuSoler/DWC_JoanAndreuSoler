@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <script type="text/javascript">
+        let accountList = new Array();
+
+        class Account{
+
+            constructor(name, aNum, money){
+                this.name = name;
+                this.aNum = aNum;
+                this.money = money;
+            }
+
+            toString(){
+                return this.name + ' is the owner of '+this.aNum+' account with '+this.money+'€.';
+            }
+        }
+
+        function addAccount() {
+            let name=document.forms["myForm"].elements["name"].value;
+            let aNum=document.forms["myForm"].elements["aNum"].value;
+            let money=document.forms["myForm"].elements["money"].value;
+
+            if (accountComprovator(aNum) == true) {
+                accountList.push(new Account(name, aNum, money));
+                document.getElementById("alert").innerHTML = "Aacount Created";
+                showAccounts();
+                totalMoney();
+            }else
+                document.getElementById("alert").innerHTML = "Error, aacount number already exist";
+        }
+
+        function accountComprovator(aNum) {
+
+            for (let i = 0; i < accountList.length; i++)
+                if (aNum == accountList[i].aNum)
+                    return false;
+
+            return true;
+        }
+
+        function showAccounts() {
+            let text = "";
+
+            for (let i = 0; i < accountList.length; i++) {
+                text += accountList[i].toString() + "<br/>";
+            }
+
+            document.getElementById("textAccount").innerHTML = text;
+        }
+
+        function totalMoney() {
+            let num = 0;
+
+            for (let i = 0; i < accountList.length; i++) {
+                num += parseInt(accountList[i].money);
+            }
+
+            document.getElementById("total").innerHTML = "Total money = " + num;
+        }
+
+    </script>
+</head>
+<body>
+
+<h2 id="total">Total money = 0</h2>
+<form id="myForm" action="#">
+    Name: <input type="text" name="name"><br>
+    Account Number: <input type="text" name="aNum"><br>
+    Money: <input type="text" name="money"><br>
+    <input type="button" onclick="addAccount()" value="Create">
+    <input type="reset">
+</form>
+<p id="alert"></p>
+<p id="textAccount"></p>
+</body>
+</html>
