@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Wikilog</title>
+    <script src="jquery-3.4.1.js"></script>
+    <style type="text/css">
+        div {
+            border: black solid;
+        }
+        .color{
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+<div id="manacor">
+    <!--<p id="qq11" class="easy"> Manacor - <span>Inca</span> id:qq11 dif:Easy <b>30 km</b></p>-->
+    <p id="qq14" class="medium"> Manacor - <span>Petra</span> id:qq14 dif:Medium <b>36 km</b></p>
+</div>
+<div id="petra">
+    <p id="qq15" class="high"> Petra - <span>Maratxi</span> id:qq15 dif:High <b>45 km</b></p>
+    <p id="qq16" class="medium"> Petra - <span>Lloseta</span> id:qq16 dif:Medium <b>16 km</b></p>
+</div>
+
+<button id="start" >Satrt</button><input type="text" id="startText"><br/>
+<button id="lvl" >lvl</button><input type="text" id="lvlText"><br/>
+<button id="id" >ID</button><input type="text" id="idText"><br/>
+<button id="km" >KM</button><input type="text" id="kmText"><br/>
+
+<button id="find" >find</button><input type="text" id="findStart"><input type="text" id="findFinal"><br/>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $("#start").click(function () {
+            let start = "#" + $("#startText").val().toLowerCase();
+            $("*").removeClass("color")
+            $(start).addClass("color");
+
+        });
+        $("#lvl").click(function () {
+            let start = "." + $("#lvlText").val().toLowerCase();
+            $("*").removeClass("color")
+            $(start).addClass("color");
+
+        });
+        $("#id").click(function () {
+            let start = "#" + $("#idText").val();
+            $("*").removeClass("color")
+            $(start).addClass("color");
+
+        });
+        $("#km").click(function () {
+            let start = $("#kmText").val() + " km";
+            $("*").removeClass("color")
+            $("b").each( function () {
+                if($(this).text() === start)
+                    $(this).parent().addClass("color");
+            })
+
+        });
+
+        $("#find").click(function () {
+            let start = "#" +$("#findStart").val().toLowerCase();
+            let final = $("#findFinal").val();
+            let llista = [];
+
+            $(start).children("p").each(function () {
+                if($(this).children("span").text() === final){
+                    console.log("trobat");
+                    return false;
+                }else {
+                    if (!llista.includes($(this).children("span").text()))
+                        llista.push($(this).children("span").text())
+                }
+
+                for (let l of llista) {
+                    start = "#" + l.toLowerCase();
+
+                    $(start).children("p").each(function () {
+                        if ($(this).children("span").text() === final) {
+                            console.log("trobat");
+                            return false;
+                        } else {
+                            if (!llista.includes($(this).children("span").text()))
+                                llista.push($(this).children("span").text())
+                        }
+                    });
+                }
+            });
+        });
+    });
+</script>
+</body>
+</html>

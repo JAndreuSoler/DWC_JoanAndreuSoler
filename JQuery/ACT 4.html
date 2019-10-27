@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="jquery-3.4.1.js"></script>
+</head>
+<body>
+<ul>
+    <li>qwer</li>
+    <li>qwer</li>
+    <li>qwer</li>
+</ul>
+<ul>
+    <li>qwer</li>
+    <li>qwer</li>
+    <li>qwer</li>
+</ul>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("li").click(function () {
+            let x = ($(this).parent().index() === 0) ? ["background-color", "blue"] :  ["font-size", 30];
+            $(this).css(x[0], x[1]);
+        })
+    })
+</script>
+
+</body>
+</html>

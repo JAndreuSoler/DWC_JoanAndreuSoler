@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="jquery-3.4.1.js"></script>
+</head>
+<body>
+<a href="">xd</a>
+<br/>
+<button id="google">google</button>
+<button id="youtube">youtube</button>
+<button id="jbarce">jbarce</button>
+<script type="text/javascript">
+
+    $(document).ready(function () {
+        $("button").click(function () {
+            let href = "";
+
+            switch ($(this).attr("id")) {
+                case "google":
+                    href = "https://www.google.es";
+                    break;
+                case "youtube":
+                    href = "https://www.youtube.com";
+                    break;
+                case "jbarce":
+                    href = "https://www.jbarce.com";
+                    break;
+            }
+
+            $("a:eq(0)").attr("href", href)
+        })
+    })
+</script>
+</body>
+</html>

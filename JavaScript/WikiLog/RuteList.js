@@ -41,10 +41,13 @@ class RuteList {
         let comp = [id, start, final, km, difficulty];
         let flag = true;
         let cont = 0;
+        let aux = true;
 
         for (let r of this.ruteList){
             for(let i in r){
-                if(comp[cont] !== "" && comp[cont] !== r[i]){
+                aux = (i === "km") ? comp[cont] === r[i] : r[i].includes(comp[cont]);
+
+                if(comp[cont] !== "" && !aux){
                     flag = false;
                     break;
                 }

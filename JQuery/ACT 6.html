@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="jquery-3.4.1.js"></script>
+</head>
+<body>
+<table>
+    <tr><td>OFF</td><td>OFF</td><td>OFF</td></tr>
+    <tr><td>OFF</td><td>OFF</td><td>OFF</td></tr>
+    <tr><td>OFF</td><td>OFF</td><td>OFF</td></tr>
+</table>
+<table>
+    <tr><td>OFF</td><td>OFF</td><td>OFF</td></tr>
+    <tr><td>OFF</td><td>OFF</td><td>OFF</td></tr>
+    <tr><td>OFF</td><td>OFF</td><td>OFF</td></tr>
+</table>
+
+<button>button</button>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("button").click(function () {
+            $("td").each(function () {
+                if($(this).parent().parent().parent().index("table") === 0)
+                    $(this).text("ON");
+            })
+        })
+    })
+</script>
+</body>
+</html>

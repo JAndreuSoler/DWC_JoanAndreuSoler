@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="jquery-3.4.1.js"></script>
+</head>
+<body>
+<table>
+    <tr><td>hola</td></tr>
+    <tr><td>hola</td></tr>
+</table>
+<script type="text/javascript">
+    let col = "";
+
+    $("table:eq(0) tr").click(function(){
+        col = ($(this).index() === 0) ? "#ffff00" : "#0000ff";
+        $(this).css("background-color", col);
+    });
+
+</script>
+</body>
+</html>
