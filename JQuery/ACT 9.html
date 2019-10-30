@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="jquery-3.4.1.js"></script>
+</head>
+<body>
+<button id="head">head</button>
+<button id="body">body</button>
+<script type="text/javascript">
+    $(document).ready(function () {
+       $("#head").click(function () {
+           alert($("head").html());
+       });
+
+        $("#body").click(function () {
+            alert($("body").html());
+        });
+    });
+</script>
+</body>
+</html>

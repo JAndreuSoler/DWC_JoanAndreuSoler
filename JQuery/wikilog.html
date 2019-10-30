@@ -15,12 +15,19 @@
 </head>
 <body>
 <div id="manacor">
-    <!--<p id="qq11" class="easy"> Manacor - <span>Inca</span> id:qq11 dif:Easy <b>30 km</b></p>-->
+    <p id="qq11" class="easy"> Manacor - <span>Inca</span> id:qq11 dif:Easy <b>30 km</b></p>
     <p id="qq14" class="medium"> Manacor - <span>Petra</span> id:qq14 dif:Medium <b>36 km</b></p>
 </div>
 <div id="petra">
     <p id="qq15" class="high"> Petra - <span>Maratxi</span> id:qq15 dif:High <b>45 km</b></p>
     <p id="qq16" class="medium"> Petra - <span>Lloseta</span> id:qq16 dif:Medium <b>16 km</b></p>
+</div>
+<div id="lloseta">
+    <p id="qq17" class="high"> Lloseta - <span>Algaida</span> id:qq17 dif:High <b>45 km</b></p>
+</div>
+<div id="algaida">
+    <p id="qq18" class="high"> Algaida - <span>Manacor</span> id:qq18 dif:High <b>45 km</b></p>
+    <p id="qq19" class="high"> Algaida - <span>Binissalem</span> id:qq19 dif:High <b>45 km</b></p>
 </div>
 
 <button id="start" >Satrt</button><input type="text" id="startText"><br/>
@@ -59,36 +66,39 @@
 
         });
 
+        /*
         $("#find").click(function () {
             let start = "#" +$("#findStart").val().toLowerCase();
             let final = $("#findFinal").val();
             let llista = [];
 
-            $(start).children("p").each(function () {
-                if($(this).children("span").text() === final){
-                    console.log("trobat");
-                    return false;
-                }else {
-                    if (!llista.includes($(this).children("span").text()))
-                        llista.push($(this).children("span").text())
-                }
+            $(start).children("p").each(function (){
+                find($(this).children("span"), final, llista);
 
                 for (let l of llista) {
-                    start = "#" + l.toLowerCase();
+                    start = "#" + l.text().toLowerCase();
 
                     $(start).children("p").each(function () {
-                        if ($(this).children("span").text() === final) {
-                            console.log("trobat");
-                            return false;
-                        } else {
-                            if (!llista.includes($(this).children("span").text()))
-                                llista.push($(this).children("span").text())
-                        }
+                        find($(this).children("span"), final, llista);
                     });
                 }
             });
         });
+
+        function find(dest, final, list) {
+            if (dest.text().toLowerCase() === final) {
+                console.log("trobat");
+                return true;
+            } else {
+                if (!list.includes(dest))
+                    list.push(dest)
+                return false;
+            }
+
+        }
+        */
     });
 </script>
+<script src="wikilog.js"></script>
 </body>
 </html>
