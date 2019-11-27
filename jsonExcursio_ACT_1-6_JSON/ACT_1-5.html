@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="../JQuery/jquery-3.4.1.js"></script>
+</head>
+<body>
+<select id="rute">
+    <option value="all">all</option>
+</select>
+
+<select id="diff">
+    <option value="all">all</option>
+</select>
+
+<table id="table"></table>
+
+<script type="text/javascript">
+
+    displayRute('../jsons/ruteJson.php')
+
+    $.getJSON( "../jsons/dificultatJson.php", function( data ) {
+        let item;
+        $.each( data, function( key, val ) {
+            item =  "<option>" + val.name + "</option>" ;
+            $("#diff").append(item);
+            //console.log(val);
+        });
+        console.log(data);
+    });
+
+    $('#diff').change(function () {
+        let option = $('#diff option:selected').val();
+        let json = '../jsons/ruteJson.php';
+
+        if (option !== 'all')
+            json += '?name=' + option;
+
+        $('#rute').find('option').slice(1).remove();
+        $('#table').find('tr').remove();
+        displayRute(json)
+    });
+
+    $('#rute').change(function () {
+        let option = $('#rute option:selected').val();
+
+        if (option !== 'all'){
+            $('tr').hide();
+            $('#r'+option).show();
+        }else
+            $('tr').show();
+
+    });
+
+    function displayRute(json) {
+        $.getJSON(json, function (data) {
+            let item;
+            let tr;
+            //$("#rute").append("<option value=\"all\">all</option>");
+
+            $.each(data, function (key, val) {
+                item = "<option value='" + val.id + "'>" + val.id + "</option>";
+                $("#rute").append(item);
+                //console.log(val);
+
+                tr = '<tr id ="r' +val['id'] +'">';
+
+                for (let v in val) {
+                    if (isNaN(v))
+                        tr += '<td>' + val[v] + '</td>';
+                }
+
+                tr += '</tr>';
+
+                $('#table').append(tr);
+            });
+        });
+    }
+</script>
+
+</body>
+</html>

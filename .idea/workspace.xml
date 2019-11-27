@@ -1,0 +1,790 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="89192ad9-d1b5-4096-bf6d-229d6d2bd8e2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/DWC.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bootstrap_ACT_7-10/ACT_7.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bootstrap_ACT_7-10/ACT_8.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DataTable/dataTable.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JQuery/ACT 10.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JQuery/ACT 11.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JQuery/ACT 12.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JQuery/ACT 13.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JQuery/ACT 14.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JQuery/ACT 15.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JQuery/ACT 16.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JQuery/ACT 17.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JQuery/ACT 18.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JQuery/ACT 19.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JQuery/ACT 20.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JQuery/ACT 21.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JQuery/ACT 22.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JQuery/ACT 23.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JQuery/jquery-3.4.1.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jsonExcursio_ACT_1-6_JSON/ACT_1-5.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jsonExcursio_ACT_1-6_JSON/ACT_6.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jsons/BDConnection.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jsons/dificultatJson.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jsons/jsons.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jsons/ruteJson.php" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution>
+      <executable />
+    </execution>
+  </component>
+  <component name="CoverageViewManager">
+    <option name="myElementSize" value="292" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/DataTable/dataTable.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="556">
+              <caret line="148" column="12" lean-forward="true" selection-start-line="148" selection-start-column="12" selection-end-line="148" selection-end-column="12" />
+              <folding>
+                <element signature="n#style#0;n#table#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>Rut</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/JavaScript/ACT 11-A.html" />
+        <option value="$PROJECT_DIR$/JavaScript/ACT 11-B.html" />
+        <option value="$PROJECT_DIR$/JavaScript/ACT 11-C.html" />
+        <option value="$PROJECT_DIR$/JavaScript/WikiLog.html" />
+        <option value="$PROJECT_DIR$/JavaScript/WikiLog.js" />
+        <option value="$PROJECT_DIR$/JavaScript/WikiLog/Rute.js" />
+        <option value="$PROJECT_DIR$/JavaScript/WikiLog/WikiLog.js" />
+        <option value="$PROJECT_DIR$/JavaScript/WikiLog/WikiLog.html" />
+        <option value="$PROJECT_DIR$/JavaScript/WikiLog/RuteList.js" />
+        <option value="$PROJECT_DIR$/JQuery/ACT 2.html" />
+        <option value="$PROJECT_DIR$/JQuery/ACT 1.html" />
+        <option value="$PROJECT_DIR$/JQuery/ACT 3.html" />
+        <option value="$PROJECT_DIR$/JQuery/ACT 4.html" />
+        <option value="$PROJECT_DIR$/JQuery/ACT 5.html" />
+        <option value="$PROJECT_DIR$/JQuery/ACT 6.html" />
+        <option value="$PROJECT_DIR$/JQuery/ACT 7.html" />
+        <option value="$PROJECT_DIR$/JQuery/ACT 8.html" />
+        <option value="$PROJECT_DIR$/JQuery/sergo.html" />
+        <option value="$PROJECT_DIR$/JQuery/ACT 9.html" />
+        <option value="$PROJECT_DIR$/JQuery/wikilog.html" />
+        <option value="$PROJECT_DIR$/JQuery/wikilog.js" />
+        <option value="$PROJECT_DIR$/JQuery/prova.php" />
+        <option value="$PROJECT_DIR$/JQuery/ACT 10.html" />
+        <option value="$PROJECT_DIR$/JQuery/ACT 11.html" />
+        <option value="$PROJECT_DIR$/JQuery/ACT 12.html" />
+        <option value="$PROJECT_DIR$/JQuery/ACT 13.html" />
+        <option value="$PROJECT_DIR$/JQuery/ACT 14.html" />
+        <option value="$PROJECT_DIR$/JQuery/ACT 15.html" />
+        <option value="$PROJECT_DIR$/JQuery/ACT 16.html" />
+        <option value="$PROJECT_DIR$/JQuery/jsonExcursio/BDConnection.php" />
+        <option value="$PROJECT_DIR$/JQuery/jsonExcursio/index.php" />
+        <option value="$PROJECT_DIR$/JQuery/jsonExcursio/dificultatJson.php" />
+        <option value="$PROJECT_DIR$/JQuery/jsonExcursio/jsons.php" />
+        <option value="$PROJECT_DIR$/JQuery/jsonExcursio/ruteJson.php" />
+        <option value="$PROJECT_DIR$/JQuery/jsonExcursio/index.html" />
+        <option value="$PROJECT_DIR$/JQuery/jsonExcursio ACT 1-6 JSON/index.html" />
+        <option value="$PROJECT_DIR$/JQuery/jsonExcursio ACT 1-6 JSON/ACT 6.html" />
+        <option value="$PROJECT_DIR$/JQuery/jsonExcursio_ACT_1-6_JSON/ACT_6.html" />
+        <option value="$PROJECT_DIR$/JavaScript/jsonExcursio_ACT_1-6_JSON/ACT_6.html" />
+        <option value="$PROJECT_DIR$/jsonExcursio_ACT_1-6_JSON/ACT_6.html" />
+        <option value="$PROJECT_DIR$/Bootstrap ACT 0-8/ACT_7.html" />
+        <option value="$PROJECT_DIR$/jsons/jsons.php" />
+        <option value="$PROJECT_DIR$/Bootstrap ACT 7-10/ACT_7.html" />
+        <option value="$PROJECT_DIR$/Bootstrap_ACT_7-10/ACT_8.html" />
+        <option value="$PROJECT_DIR$/JQuery/ACT 17.html" />
+        <option value="$PROJECT_DIR$/JQuery/ACT 18.html" />
+        <option value="$PROJECT_DIR$/JQuery/ACT 20.html" />
+        <option value="$PROJECT_DIR$/JQuery/ACT 21.html" />
+        <option value="$PROJECT_DIR$/JQuery/ACT 22.html" />
+        <option value="$PROJECT_DIR$/JQuery/ACT 23.html" />
+        <option value="$PROJECT_DIR$/DataTable/dataTable.html" />
+      </list>
+    </option>
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 5.6" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
+    <option name="width" value="977" />
+    <option name="height" value="1038" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="DWC" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DWC" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\DWC" />
+      <recent name="C:\wamp64\www\DWC\JavaScript" />
+      <recent name="C:\wamp64\www\DWC\JQuery\jsons" />
+      <recent name="C:\Users\joana\Desktop\DWC\JavaScript" />
+      <recent name="C:\Users\joana\Desktop\DWC\JQuery" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\joana\Desktop\DWC\JavaScript" />
+      <recent name="C:\Users\joana\Desktop\DWC\JQuery" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="PHP Script.jsons.php">
+    <configuration name="WikiLog.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/DWC/JavaScript/WikiLog/WikiLog.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="prova.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/DWC/JQuery/prova.php" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="jsons.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/jsons/jsons.php">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="PHP Script.jsons.php" />
+        <item itemvalue="JavaScript Debug.prova.php" />
+        <item itemvalue="JavaScript Debug.WikiLog.html" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="89192ad9-d1b5-4096-bf6d-229d6d2bd8e2" name="Default Changelist" comment="" />
+      <created>1569407894250</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1569407894250</updated>
+      <workItem from="1569407895347" duration="4519000" />
+      <workItem from="1569790191760" duration="6694000" />
+      <workItem from="1569827453437" duration="7768000" />
+      <workItem from="1569864774150" duration="12000" />
+      <workItem from="1569877118509" duration="599000" />
+      <workItem from="1570001579339" duration="2211000" />
+      <workItem from="1570008199540" duration="5251000" />
+      <workItem from="1570024229623" duration="6546000" />
+      <workItem from="1570433195433" duration="3026000" />
+      <workItem from="1570607492917" duration="6276000" />
+      <workItem from="1570646765334" duration="599000" />
+      <workItem from="1570688672822" duration="4939000" />
+      <workItem from="1570976827546" duration="10151000" />
+      <workItem from="1571037580431" duration="6244000" />
+      <workItem from="1571211302021" duration="7584000" />
+      <workItem from="1571309226982" duration="320000" />
+      <workItem from="1571309561569" duration="599000" />
+      <workItem from="1571645594433" duration="5375000" />
+      <workItem from="1571818890818" duration="8077000" />
+      <workItem from="1571996515093" duration="26000" />
+      <workItem from="1572196494935" duration="1360000" />
+      <workItem from="1572249725261" duration="7251000" />
+      <workItem from="1572426059826" duration="8410000" />
+      <workItem from="1572864206967" duration="47000" />
+      <workItem from="1572887870983" duration="2821000" />
+      <workItem from="1572941014899" duration="18000" />
+      <workItem from="1572977068909" duration="1401000" />
+      <workItem from="1573027335344" duration="110000" />
+      <workItem from="1573029227177" duration="3919000" />
+      <workItem from="1573110598953" duration="15000" />
+      <workItem from="1573115332566" duration="13000" />
+      <workItem from="1573424556969" duration="3457000" />
+      <workItem from="1573459325509" duration="9683000" />
+      <workItem from="1573494964491" duration="24000" />
+      <workItem from="1573581998232" duration="1023000" />
+      <workItem from="1573641624652" duration="7352000" />
+      <workItem from="1573719926690" duration="599000" />
+      <workItem from="1573731674709" duration="598000" />
+      <workItem from="1573813564966" duration="134000" />
+      <workItem from="1574072675248" duration="1650000" />
+      <workItem from="1574240291740" duration="676000" />
+      <workItem from="1574249481419" duration="3964000" />
+      <workItem from="1574413878296" duration="627000" />
+      <workItem from="1574624324227" duration="2476000" />
+      <workItem from="1574792021913" duration="4379000" />
+    </task>
+    <task id="LOCAL-00001" summary="ACT 01-04 (05 TODO)">
+      <created>1569412131210</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1569412131211</updated>
+    </task>
+    <task id="LOCAL-00002" summary="ACT 01-08">
+      <created>1569800731315</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1569800731315</updated>
+    </task>
+    <task id="LOCAL-00003" summary="ACT 08-A correct">
+      <created>1569827894378</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1569827894378</updated>
+    </task>
+    <task id="LOCAL-00004" summary="ACT 08-10">
+      <created>1569838839824</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1569838839824</updated>
+    </task>
+    <task id="LOCAL-00005" summary="ACT 10">
+      <created>1570002960506</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1570002960506</updated>
+    </task>
+    <task id="LOCAL-00006" summary="ACT 11-B">
+      <created>1570029553512</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1570029553512</updated>
+    </task>
+    <task id="LOCAL-00007" summary="WikiLog">
+      <created>1571038434145</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1571038434145</updated>
+    </task>
+    <task id="LOCAL-00008" summary="JavaScriot done">
+      <created>1572197249596</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1572197249596</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Wikilog jQuery">
+      <created>1572436682999</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1572436682999</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="148823000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12147651" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3286119" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39943343" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.3286119" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32909605" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" weight="0.3286119" />
+      <window_info anchor="bottom" id="PHP-CGI Server" order="12" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="right" id="Coverage" order="4" side_tool="true" weight="0.3295302" />
+    </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17181209" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3286119" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32909605" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" weight="0.3286119" />
+      <window_info anchor="bottom" id="PHP-CGI Server" order="12" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="right" id="Coverage" order="4" side_tool="true" weight="0.3295302" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="ACT 01-04 (05 TODO)" />
+    <MESSAGE value="ACT 01-08" />
+    <MESSAGE value="ACT 08-A correct" />
+    <MESSAGE value="ACT 08-10" />
+    <MESSAGE value="ACT 10" />
+    <MESSAGE value="ACT 11-B" />
+    <MESSAGE value="WikiLog" />
+    <MESSAGE value="JavaScriot done" />
+    <MESSAGE value="Wikilog jQuery" />
+    <option name="LAST_COMMIT_MESSAGE" value="Wikilog jQuery" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/DWC$prova_php.dat" NAME="prova.php Coverage Results" MODIFIED="1572435516718" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="WipCoverageRunner" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/JavaScript/ACT 05-A.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="8" selection-start-line="6" selection-start-column="8" selection-end-line="14" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JavaScript/ACT 10-H.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="35" lean-forward="true" selection-start-line="5" selection-start-column="35" selection-end-line="5" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JavaScript/ACT 10-I.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="13" lean-forward="true" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JavaScript/ACT 11-A.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="7" lean-forward="true" selection-start-line="23" selection-start-column="7" selection-end-line="23" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JavaScript/ACT 11-B.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1904">
+          <caret line="112" column="28" selection-start-line="112" selection-start-column="6" selection-end-line="112" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JavaScript/ACT 11-C.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="71" lean-forward="true" selection-start-line="25" selection-start-column="71" selection-end-line="25" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JavaScript/ACT 05-C.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" selection-start-line="7" selection-end-line="15" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JavaScript/ACT 01.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="43" selection-start-line="9" selection-start-column="43" selection-end-line="9" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JavaScript/ACT 06-A.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" selection-start-line="7" selection-end-line="19" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JavaScript/WikiLog/Rute.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JavaScript/ACT 12-C.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="11" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JQuery/ACT 3.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="7" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JQuery/sergo.html" />
+    <entry file="file://$PROJECT_DIR$/JavaScript/WikiLog/WikiLog.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="714">
+          <caret line="42" column="29" selection-start-line="42" selection-start-column="29" selection-end-line="42" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JavaScript/WikiLog/RuteList.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="799">
+          <caret line="47" column="49" selection-start-line="47" selection-start-column="49" selection-end-line="47" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JavaScript/WikiLog/WikiLog.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="647">
+          <caret line="42" column="31" selection-start-line="42" selection-start-column="27" selection-end-line="42" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JQuery/prova.php" />
+    <entry file="file://$PROJECT_DIR$/JQuery/wikilog.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="6" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JQuery/ACT 9.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="19" lean-forward="true" selection-start-line="5" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JQuery/ACT 7.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JQuery/ACT 6.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" column="14" selection-start-line="26" selection-start-column="14" selection-end-line="26" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JQuery/ACT 5.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="31" lean-forward="true" selection-start-line="23" selection-start-column="31" selection-end-line="23" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JQuery/ACT 4.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="89" selection-start-line="22" selection-start-column="89" selection-end-line="22" selection-end-column="98" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JQuery/ACT 2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JQuery/ACT 8.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JQuery/wikilog.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="35" column="29" selection-start-line="35" selection-start-column="29" selection-end-line="35" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JQuery/ACT 10.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="10" selection-end-line="19" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JQuery/ACT 11.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="9" selection-end-line="36" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JQuery/ACT 12.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="29" column="28" selection-start-line="29" selection-start-column="28" selection-end-line="29" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JQuery/ACT 13.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="37" selection-end-line="33" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JQuery/ACT 14.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" selection-end-line="31" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JQuery/ACT 16.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="14" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JQuery/ACT 15.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="29" column="34" selection-start-line="29" selection-start-column="34" selection-end-line="29" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JQuery/ACT 1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/platform-impl.jar!/resources/html5-schema/html5/core-scripting.rnc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="227">
+          <caret line="44" column="22" selection-start-line="44" selection-start-column="22" selection-end-line="44" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jsonExcursio_ACT_1-6_JSON/ACT_1-5.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-238">
+          <caret line="7" column="27" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jsonExcursio_ACT_1-6_JSON/ACT_6.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="33" column="34" selection-start-line="33" selection-start-column="34" selection-end-line="33" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jsons/jsons.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="22" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jsons/ruteJson.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="12" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jsons/BDConnection.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="72" selection-start-line="9" selection-start-column="72" selection-end-line="9" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jsons/dificultatJson.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="25" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Bootstrap_ACT_7-10/ACT_8.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Bootstrap_ACT_7-10/ACT_7.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="32" column="27" selection-start-line="32" selection-start-column="27" selection-end-line="32" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JQuery/ACT 17.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="98" lean-forward="true" selection-start-line="3" selection-start-column="4" selection-end-line="11" selection-end-column="98" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JQuery/ACT 18.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="9" lean-forward="true" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JQuery/ACT 19.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="4" lean-forward="true" selection-start-line="3" selection-start-column="4" selection-end-line="11" selection-end-column="98" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JQuery/ACT 20.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="4" lean-forward="true" selection-start-line="3" selection-start-column="4" selection-end-line="11" selection-end-column="98" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JQuery/ACT 21.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="4" lean-forward="true" selection-start-line="3" selection-start-column="4" selection-end-line="11" selection-end-column="98" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JQuery/ACT 22.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="4" lean-forward="true" selection-start-line="3" selection-start-column="4" selection-end-line="12" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JQuery/ACT 23.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" column="7" lean-forward="true" selection-start-line="26" selection-start-column="7" selection-end-line="26" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DataTable/dataTable.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="556">
+          <caret line="148" column="12" lean-forward="true" selection-start-line="148" selection-start-column="12" selection-end-line="148" selection-end-column="12" />
+          <folding>
+            <element signature="n#style#0;n#table#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

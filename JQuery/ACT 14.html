@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="jquery-3.4.1.js"></script>
+    <style>
+        .color {
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+<button>background</button>
+
+<script type="text/javascript">
+
+    $(document).ready(function () {
+        let but = $("button");
+        let bod = $("body");
+
+        but.mousedown(function () {
+            bod.addClass("color")
+        });
+
+        but.mouseup(function () {
+            bod.removeClass("color")
+        });
+    });
+</script>
+</body>
+</html>

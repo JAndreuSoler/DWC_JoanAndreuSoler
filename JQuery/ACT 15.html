@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="jquery-3.4.1.js"></script>
+    <style>
+        div {
+            height: 700px;
+            width: 20px;
+            border: solid 3px;
+        }
+        .div {
+            height: 250px;
+            width: 250px;
+            border: solid 3px;
+        }
+    </style>
+</head>
+<div>
+
+</div>
+
+<script type="text/javascript">
+
+    $(document).ready(function () {
+        let div = $("div");
+
+        div.dblclick( function () {
+            if($(this).attr("class") === "div")
+                $(this).removeClass("div");
+            else
+                $(this).addClass("div")
+        })
+    });
+</script>
+</html>

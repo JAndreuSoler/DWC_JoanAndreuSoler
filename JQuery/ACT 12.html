@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="jquery-3.4.1.js"></script>
+    <style>
+        .color {
+            background-color: aqua;
+        }
+    </style>
+</head>
+
+<table>
+    <tr>
+        <td>xd</td>
+        <td>xd</td>
+    </tr>
+    <tr>
+        <td>xd</td>
+        <td>xd</td>
+    </tr>
+</table>
+
+<script type="text/javascript">
+
+    $(document).ready(function () {
+        let td = $("td");
+
+        td.hover(enter, exit)
+
+        function enter() {
+            $(this).addClass("color");
+        }
+
+        function exit () {
+            $(this).removeClass("color");
+        }
+    });
+</script>
+</html>

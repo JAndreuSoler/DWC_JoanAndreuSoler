@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="../JQuery/jquery-3.4.1.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#add").click(function () {
+                addInputEnd();
+            });
+            $(".rv").click(function () {
+                console.log("Remove!");
+                $('.item').remove();
+            });
+        });
+        function removeItem(item) {
+            console.log(item);
+            item.parentNode().remove();
+        }
+        function addInputEnd() {
+            $(".list").append("<li class='item'><input type='text'><button class='rv'>Remove</button><br></li>");
+            console.log($('.rv'));
+        }
+    </script>
+</head>
+<body>
+<h1>Press to create new inputs</h1>
+<ul class="list">
+    <li class='item'><input type='text'><button class='rv'>Remove</button><br></li>
+</ul>
+<button id="add">Add input</button>
+</body>
+</html>
