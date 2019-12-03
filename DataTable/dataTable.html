@@ -12,9 +12,9 @@
 
     <link rel="stylesheet" href="https://cdn.datatables.net/select/1.2.7/css/select.bootstrap4.min.css"/>
 
-    <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.2.3/css/responsive.bootstrap4.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.2.3/css/responsive.bootstrap4.min.css"/>
 
-    <link rel="stylesheet" href="https://cdn.datatables.net/buttons/1.6.1/css/buttons.dataTables.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/buttons/1.6.1/css/buttons.dataTables.min.css"/>
 
     <!-- js -->
 
@@ -56,24 +56,75 @@
         </div>
     </div>
 
-    <form>
-        <div class="form-row">
-            <div class="form-group col-md-6">
-                <label for="id">ID</label>
-                <input type="text" class="form-control" id="id" placeholder="ID">
-                <label for="inici">Inici</label>
-                <input type="text" class="form-control" id="inici" placeholder="Inici">
-                <label for="final">Final</label>
-                <input type="text" class="form-control" id="final" placeholder="Final">
-                <label for="dificultat">Dificultat</label>
-                <input type="text" class="form-control" id="dificultat" placeholder="Dificultat">
-                <label for="km">KM</label>
-                <input type="text" class="form-control" id="km" placeholder="KM">
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+        Add
+    </button>
+    <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#modify" id="openModify">
+        Modify
+    </button>
+
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>Add</h2>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="id">ID</label>
+                                <input type="text" class="form-control" id="id" placeholder="ID">
+                                <label for="inici">Inici</label>
+                                <input type="text" class="form-control" id="inici" placeholder="Inici">
+                                <label for="final">Final</label>
+                                <input type="text" class="form-control" id="final" placeholder="Final">
+                                <label for="dificultat">Dificultat</label>
+                                <input type="text" class="form-control" id="dificultat" placeholder="Dificultat">
+                                <label for="km">KM</label>
+                                <input type="text" class="form-control" id="km" placeholder="KM">
+                            </div>
+                        </div>
+                        <button type="button" class="btn" id="addRow" data-dismiss="modal">add</button>
+                    </form>
+                </div>
             </div>
         </div>
-        <button type="button" class="btn" id="addRow">add</button>
-        <button type="button" class="btn" id="remove">remove</button>
-    </form>
+    </div>
+
+    <div class="modal fade" id="modify" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>Add</h2>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="id">ID</label>
+                                <input type="text" class="form-control" id="idMod" placeholder="ID" disabled>
+                                <label for="inici">Inici</label>
+                                <input type="text" class="form-control" id="iniciMod" placeholder="Inici">
+                                <label for="final">Final</label>
+                                <input type="text" class="form-control" id="finalMod" placeholder="Final">
+                                <label for="dificultat">Dificultat</label>
+                                <input type="text" class="form-control" id="dificultatMod" placeholder="Dificultat">
+                                <label for="km">KM</label>
+                                <input type="text" class="form-control" id="kmMod" placeholder="KM">
+                            </div>
+                        </div>
+                        <button type="button" class="btn" id="modifyRow" data-dismiss="modal">add</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <button type="button" class="btn" id="remove">remove</button>
+
 </div>
 
 
@@ -92,7 +143,7 @@
                 {title: "Dificultat", data:'3'},
                 {title: "KM", data:'km'}
             ],
-            select: 'multi',
+            select: 'single',
             responsive: true,
             "language": {
                 "sProcessing":     "Procesando...",
@@ -125,14 +176,24 @@
             dom: 'Bfrtip',
             buttons: [
                 'copy', 'csv', 'excel', 'pdf', 'print'
-            ]
+            ],
+
+            createdRow: function( row, data, dataIndex ) {
+                if (data['3'] == "dificil") {
+                    $(row).addClass('bg-danger');
+                } else if (data['3'] == "mitja") {
+                    $(row).addClass('bg-warning');
+                } else if (data['3'] == "facil") {
+                    $(row).addClass('bg-success');
+                }
+            }
         });
 
         let t = $('#example').DataTable();
 
 
         $('#addRow').on( 'click', function () {
-            console.log($("#id").val());
+
             t.row.add( {
                 "id": $("#id").val(),
                 "inici": $("#inici").val(),
@@ -147,6 +208,32 @@
         $('#remove').click( function () {
             t.row('.selected').remove().draw( false );
         } );
+
+
+        $('#openModify').click( function () {
+            let data = t.row('.selected').data();
+
+            console.log(data);
+
+            $("#idMod").val(data['id']);
+            $("#iniciMod").val(data['inici']);
+            $("#finalMod").val(data['final'])
+            $("#dificultatMod").val(data['3'])
+            $("#kmMod").val(data['km'])
+        } );
+
+        $('#modifyRow').on( 'click', function () {
+
+            t.row('.selected').data( {
+                "id": $("#idMod").val(),
+                "inici": $("#iniciMod").val(),
+                "final": $("#finalMod").val(),
+                "3": $("#dificultatMod").val(),
+                "km": $("#km").val(),
+            } ).draw( false );
+
+        } );
+
     });
 </script>
 </body>
