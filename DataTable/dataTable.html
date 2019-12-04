@@ -207,14 +207,6 @@
 
         $('#addRow').on( 'click', function () {
 
-            t.row.add( {
-                "id": $("#id").val(),
-                "inici": $("#inici").val(),
-                "final": $("#final").val(),
-                "3": diff[$("#dificultat").val()],
-                "km": $("#km").val(),
-            } ).draw( false );
-
             $.ajax({
                 url: '../jsons/AddRute.php',
                 type: 'POST',
@@ -227,7 +219,13 @@
                     km: $("#km").val(),
                 }
             }).done(function(data){
-                alert(JSON.stringify(data));
+                t.row.add( {
+                    "id": $("#id").val(),
+                    "inici": $("#inici").val(),
+                    "final": $("#final").val(),
+                    "3": diff[$("#dificultat").val()],
+                    "km": $("#km").val(),
+                } ).draw( false );
             }).fail(function(jqXHR, textStatus, errorThrown) {
                 alert(jqXHR.responseText);
             });
@@ -244,37 +242,29 @@
                     id: t.row('.selected').data()[0],
                 }
             }).done(function(data){
-
+                t.row('.selected').remove().draw( false );
             }).fail(function(jqXHR, textStatus, errorThrown) {
                 alert(jqXHR.responseText);
             });
 
-            t.row('.selected').remove().draw( false );
-            console.log(t.row('.selected').data()[0]);
         } );
 
 
         $('#openModify').click( function () {
             let data = t.row('.selected').data();
 
-            console.log(data);
+            let dif = { "facil": 1, "mitja": 2, "dificil": 3 };
 
             $("#idMod").val(data['id']);
             $("#iniciMod").val(data['inici']);
-            $("#finalMod").val(data['final'])
-            $("#dificultatMod").val(data['3'])
-            $("#kmMod").val(data['km'])
+            $("#finalMod").val(data['final']);
+            $("#dificultatMod").val(dif[data['3']]);
+            $("#kmMod").val(data['km']);
         } );
 
         $('#modifyRow').on( 'click', function () {
 
-            t.row('.selected').data( {
-                "id": $("#idMod").val(),
-                "inici": $("#iniciMod").val(),
-                "final": $("#finalMod").val(),
-                "3": diff[$("#dificultatMod").val()],
-                "km": $("#kmMod").val(),
-            } ).draw( false );
+
 
             $.ajax({
                 url: '../jsons/modiRute.php',
@@ -288,7 +278,13 @@
                     km: $("#kmMod").val(),
                 }
             }).done(function(data){
-                alert(JSON.stringify(data));
+                t.row('.selected').data( {
+                    "id": $("#idMod").val(),
+                    "inici": $("#iniciMod").val(),
+                    "final": $("#finalMod").val(),
+                    "3": diff[$("#dificultatMod").val()],
+                    "km": $("#kmMod").val(),
+                } ).draw( false );
             }).fail(function(jqXHR, textStatus, errorThrown) {
                 alert(jqXHR.responseText);
             });
