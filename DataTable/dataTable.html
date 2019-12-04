@@ -18,6 +18,9 @@
 
     <!-- js -->
 
+    <script src="Stuk-jszip-3109282/dist/jszip.min.js"></script>
+    <script src="Stuk-jszip-3109282/vendor/FileSaver.js"></script>
+
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
@@ -80,7 +83,11 @@
                                 <label for="final">Final</label>
                                 <input type="text" class="form-control" id="final" placeholder="Final">
                                 <label for="dificultat">Dificultat</label>
-                                <input type="text" class="form-control" id="dificultat" placeholder="Dificultat">
+                                <select id="dificultat" class="form-control">
+                                    <option value="1">Facil</option>
+                                    <option value="2">Mitja</option>
+                                    <option value="3">Dificil</option>
+                                </select><br>
                                 <label for="km">KM</label>
                                 <input type="text" class="form-control" id="km" placeholder="KM">
                             </div>
@@ -108,8 +115,12 @@
                                 <input type="text" class="form-control" id="iniciMod" placeholder="Inici">
                                 <label for="final">Final</label>
                                 <input type="text" class="form-control" id="finalMod" placeholder="Final">
-                                <label for="dificultat">Dificultat</label>
-                                <input type="text" class="form-control" id="dificultatMod" placeholder="Dificultat">
+                                <label for="dificultatMod">Dificultat</label>
+                                <select id="dificultatMod" class="form-control">
+                                    <option value="1">Facil</option>
+                                    <option value="2">Mitja</option>
+                                    <option value="3">Dificil</option>
+                                </select><br>
                                 <label for="km">KM</label>
                                 <input type="text" class="form-control" id="kmMod" placeholder="KM">
                             </div>
@@ -124,11 +135,13 @@
 
 
     <button type="button" class="btn" id="remove">remove</button>
-
+    <button type="button" class="btn" id="zip">zip</button>
 </div>
 
 
 <script type="text/javascript">
+    let diff = ['', 'facil', 'mitja', 'dificil']
+
     $(document).ready( function () {
         $('#example').DataTable( {
             ajax: {
@@ -198,15 +211,46 @@
                 "id": $("#id").val(),
                 "inici": $("#inici").val(),
                 "final": $("#final").val(),
-                "3": $("#dificultat").val(),
+                "3": diff[$("#dificultat").val()],
                 "km": $("#km").val(),
             } ).draw( false );
+
+            $.ajax({
+                url: '../jsons/AddRute.php',
+                type: 'POST',
+                dataType: "json",
+                data: {
+                    id: $("#id").val(),
+                    inici: $("#inici").val(),
+                    final: $("#final").val(),
+                    diff: $("#dificultat").val(),
+                    km: $("#km").val(),
+                }
+            }).done(function(data){
+                alert(JSON.stringify(data));
+            }).fail(function(jqXHR, textStatus, errorThrown) {
+                alert(jqXHR.responseText);
+            });
 
         } );
 
 
         $('#remove').click( function () {
+            $.ajax({
+                url: '../jsons/DeleteRute.php',
+                type: 'POST',
+                dataType: "json",
+                data: {
+                    id: t.row('.selected').data()[0],
+                }
+            }).done(function(data){
+
+            }).fail(function(jqXHR, textStatus, errorThrown) {
+                alert(jqXHR.responseText);
+            });
+
             t.row('.selected').remove().draw( false );
+            console.log(t.row('.selected').data()[0]);
         } );
 
 
@@ -228,11 +272,39 @@
                 "id": $("#idMod").val(),
                 "inici": $("#iniciMod").val(),
                 "final": $("#finalMod").val(),
-                "3": $("#dificultatMod").val(),
-                "km": $("#km").val(),
+                "3": diff[$("#dificultatMod").val()],
+                "km": $("#kmMod").val(),
             } ).draw( false );
 
+            $.ajax({
+                url: '../jsons/modiRute.php',
+                type: 'POST',
+                dataType: "json",
+                data: {
+                    id: $("#idMod").val(),
+                    inici: $("#iniciMod").val(),
+                    final: $("#finalMod").val(),
+                    diff: $("#dificultatMod").val(),
+                    km: $("#kmMod").val(),
+                }
+            }).done(function(data){
+                alert(JSON.stringify(data));
+            }).fail(function(jqXHR, textStatus, errorThrown) {
+                alert(jqXHR.responseText);
+            });
+
         } );
+
+        $('#zip').click(function () {
+            var zip = new JSZip();
+            var img = zip.folder("images");
+            img.file("ex.jpg", "R0lGODdhBQAFAIACAAAAAP/eACwAAAAABQAFAAACCIwPkWerClIBADs=", {base64: true});
+            zip.generateAsync({type:"blob"})
+                .then(function(content) {
+                    // see FileSaver.js
+                    saveAs(content, "example.zip");
+                });
+        })
 
     });
 </script>
