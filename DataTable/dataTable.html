@@ -219,17 +219,18 @@
                     km: $("#km").val(),
                 }
             }).done(function(data){
-                t.row.add( {
-                    "id": $("#id").val(),
-                    "inici": $("#inici").val(),
-                    "final": $("#final").val(),
-                    "3": diff[$("#dificultat").val()],
-                    "km": $("#km").val(),
-                } ).draw( false );
+
             }).fail(function(jqXHR, textStatus, errorThrown) {
                 alert(jqXHR.responseText);
             });
 
+            t.row.add( {
+                "id": $("#id").val(),
+                "inici": $("#inici").val(),
+                "final": $("#final").val(),
+                "3": diff[$("#dificultat").val()],
+                "km": $("#km").val(),
+            } ).draw( false );
         } );
 
 
@@ -242,11 +243,12 @@
                     id: t.row('.selected').data()[0],
                 }
             }).done(function(data){
-                t.row('.selected').remove().draw( false );
+
             }).fail(function(jqXHR, textStatus, errorThrown) {
                 alert(jqXHR.responseText);
             });
 
+            t.row('.selected').remove().draw( false );
         } );
 
 
@@ -278,16 +280,20 @@
                     km: $("#kmMod").val(),
                 }
             }).done(function(data){
-                t.row('.selected').data( {
-                    "id": $("#idMod").val(),
-                    "inici": $("#iniciMod").val(),
-                    "final": $("#finalMod").val(),
-                    "3": diff[$("#dificultatMod").val()],
-                    "km": $("#kmMod").val(),
-                } ).draw( false );
+
             }).fail(function(jqXHR, textStatus, errorThrown) {
                 alert(jqXHR.responseText);
             });
+
+            t.row('.selected').data( {
+                "id": $("#idMod").val(),
+                "inici": $("#iniciMod").val(),
+                "final": $("#finalMod").val(),
+                "3": diff[$("#dificultatMod").val()],
+                "km": $("#kmMod").val(),
+            } ).draw( false );
+
+            t.ajax.reload();
 
         } );
 

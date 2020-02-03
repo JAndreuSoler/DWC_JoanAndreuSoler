@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>My First Google Map</h1>
+
+<div id="googleMap" style="width:100%;height:400px;"></div>
+
+<script>
+    var labels = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    var labelIndex = 0;
+
+    function myMap() {
+        var mapProp= {
+            center:new google.maps.LatLng(51.508742,-0.120850),
+            zoom:5,
+        };
+        var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+        map.data.loadGeoJson('https://storage.googleapis.com/mapsdevsite/json/google.json');
+
+        var image = {
+            url: "https://scontent-mad1-1.cdninstagram.com/v/t51.2885-15/e35/73317396_542318883192160_8569758292953467976_n.jpg?_nc_ht=scontent-mad1-1.cdninstagram.com&_nc_cat=104&oh=9e3f1c1e6588318a57155fdceaa7c1df&oe=5EB42C2B", // url
+            scaledSize: new google.maps.Size(50, 70), // scaled size
+            origin: new google.maps.Point(0,0), // origin
+            anchor: new google.maps.Point(0, 0) // anchor
+        };
+
+        var marker = new google.maps.Marker({
+            position: { lat: 39.570970, lng: 3.205061 },
+            map: map,
+            icon: image
+        });
+
+        var contentString = '<div id="content">'+
+            '<div id="siteNotice">'+
+            '</div>'+
+            '<h1 id="firstHeading" class="firstHeading">Sergio</h1>'+
+            '<div id="bodyContent">'+
+            '<p>Hola Sergio</p>'
+            '</div>'+
+            '</div>';
+
+        var infowindow = new google.maps.InfoWindow({
+            content: contentString
+        });
+
+        marker.addListener('click', function() {
+            infowindow.open(map, marker);
+        });
+
+       // google.maps.event.addDomListener(window, 'load', initialize);
+    }
+
+
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBCKiIqCdZGrVxx06LSbe7uG3zXOq1Cz5k&callback=myMap"></script>
+</body>
+</html>
